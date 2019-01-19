@@ -5,21 +5,3 @@ body {
 h1 {
     background-color: pink;
 }
-
-div{
-    width: 500px;
-    height: 500px;
-    background: orangered;
-    display: inline-block;
-    margin: 40px 60px;
-    line-height: 500px;
-    border: 20px yellow;
-}
-
-.box-1{
-    border-radius: 50px;
-}
-
-.box-2{
-    border-radius: 80px;
-}
