@@ -65,3 +65,30 @@ a {
     font-size: 24px;
 }
 
+ul.a {
+    list-style-type: circle;
+}
+
+div.static{
+    position: static;
+    border: 3px solid #73ad21;
+}
+
+.dropdiwn-content {
+    display: none;
+    position: absolute;
+    background: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+li {
+    display: inline;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+
