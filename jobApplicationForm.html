@@ -9,7 +9,8 @@
 <body>
 <div class="container">
 
-<h2>Job Application</h2>
+<h2 style="color: lightskyblue;">Job Application</h2>
+<img src="http://aceseurope.eu/wp-content/uploads/2017/10/company.jpg" alt="company" width="600" height="300">
 <p>&nbsp;</p>
 
 <form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
@@ -45,7 +46,19 @@
 			<div class="col-sm-9">
 				<input type="text" name="firstname">
 			</div>
-		</div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Last name</label>
+            <div class="col-sm-9">
+                <input type="text" name="lastname">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Telephone number</label>
+            <div class="col-sm-9">
+                <input type="text" name="telephone number">
+            </div>
+        </div>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Street address</label>
 			<div class="col-sm-9">
@@ -143,7 +156,22 @@
 					</label>
 				</div>
 			</div>
-		</div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-12 control-label">Do you have any work experiences?</label>
+            <div class="col-sm-offset-1 col-sm-11">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="experiences" vaule="yes">Yes
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="experiences" value="no">No
+                    </label>
+                </div>
+            </div>
+        </div>
 		<div class="form-group row">
 			<label class="col-sm-12 control-label">What type of position are you seeking? (check all that apply)</label>
 			<div class="col-sm-offset-1 col-sm-11">
@@ -214,6 +242,17 @@
 
 	<p>&nbsp;</p>
 
+    <fieldset>
+        <legend>Tips For Introducing Yourself</legend>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/V1xt7zgnuK0" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-
+        media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    </fieldset>
+
+    <p>&nbsp;</p>
+
 	<fieldset>
 		<legend>Personal Statement</legend>
 		<div class="form-group">
@@ -223,16 +262,45 @@
 		<div class="form-group">
 			<label class="control-label">Describe a recent project</label>
 			<textarea class="form-control" name="project" rows="6"></textarea>
-		</div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Resume</label>
+            <textarea class="form-control" name="resume" rows="6"></textarea>
+        </div>
 	</fieldset>
 
-	<p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+    <fieldset>
+        <legend>Company's Location</legend>
+        <iframe src="https://www.google.com/maps/embed?
+        pb=!1m18!1m12!1m3!1d2687.497101045575!2d-
+        122.30571394943671!3d47.65533869250192!2m3!1f0!2f0!3f0!3m2!1
+        i1024!2i768!4f13.1!3m3!1m2!1s0x549014929d8535eb%3A0x6b742c79
+        01b82ba3!2sUniversity+of+Washington!5e0!3m2!1sen!2sus!4v1548
+        563448972" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>
+    </fieldset>
+    
+    <p>&nbsp;</p>
 
-	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+    <fieldset>
+            <legend>Thanks For Applying</legend>
+            <iframe src="https://giphy.com/embed/3ohs7JG6cq7EWesFcQ" width="480" 
+            height="320" frameBorder="0" class="giphy-embed" 
+            allowFullScreen></iframe><p><a 
+                href="https://giphy.com/gifs/studiosoriginals-
+                3ohs7JG6cq7EWesFcQ">via GIPHY</a></p>
+        </fieldset>
+    
+    <p>&nbsp;</p>
 
-	<p>&nbsp;</p>
+	<input class="btn btn-primary btn-lg" type="submit" value="Submit form"> 
+
+    <p>&nbsp;</p>
 
 </form>
+<form action="http://gclass.alexburner.com/formtest.php" method="POST"></form>
 </div><!-- close .container -->
 </body>
 </html>
