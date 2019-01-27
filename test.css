@@ -1,0 +1,67 @@
+#Header {
+    border: solid 8px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 500px;
+}
+
+#Content {
+    border: solid 8px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 700px;
+    padding: 15px;
+}
+
+#LeftNav {
+    border: solid 8px black;
+    margin-bottom: 10px;
+    width: 400px;
+    float: left;
+    padding-bottom: 8px;
+}
+
+#Footer {
+    border: solid 8px black;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#Header h1{
+    font-size: 60;
+    font-family: "Passion One"; 
+    color: #FFBC00;
+    font-weight: bold;
+}
+
+p{
+    color:white;
+    font-family: "Arial"
+}
+
+h3{
+    color: #FFBC00;
+    font-size: 40px;
+    font-family: "Passion One";
+    margin-bottom: 0px;
+}
+
+div{
+    background-color: #8E41D5;
+}
+
+body{
+    background-image: url('dark_wood.png')
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
