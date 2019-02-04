@@ -387,7 +387,7 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		background-image: url("images/header.jpg") no-repeat center;
+		background-image: url("images/header.jpg");
 		background-size: cover;
 	}
 
