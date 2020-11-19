@@ -1,0 +1,50 @@
+---
+title: "Assignment 3: Data Visualization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("a3.R")
+
+library(knitr)
+library(ggplot2)
+```
+
+
+## Introduction + Summary Information
+The state with the lowest AAPI prison pop. is `r aapi_lowest` and the highest is 
+`r aapi_highest`
+
+The state with the lowest native prison pop. from age 15 to 64 is `r lowest_pop` 
+and the highest is `r highest_pop`
+
+The `r location_most_area` has the highest metro area
+
+### A paragraph of summary information 
+From the data, I got the two values from the Asian American / Pacific Islander population from ages 15 to 64: California is the state that has the highest population, and Wyoming is the state that has the lowest population. Then, I wrote similar coding to get another two values from the Native American Population from ages 15 to 64: Oklahoma is the state that has the highest population, and Washington, D.C. is the state that has the lowest population. Based on the location, I found that Oklahoma is one of the accounting for the largest concentration of the Native American. Compared with Oklahoma, Washington, D.C., has the lowest population of less than 2000 Native Americans in 2018(Wikipedia). Location can be an essential factor determining the number of state prisons since a particular race of people who live in this state from ancestral series. So that's why the country with the highest population of a specific race then get the highest prison population.
+Additionally, Wyoming only has less than 5000 people of the Asian American / Pacific Islander population(Wikipedia). Lastly, I also found a county's value with the most extensive account of the core-based statistical area, which is Columbia County in South California. It indicates that this county has at least one urban core with a population plus adjacent spaces with a high degree of social and economic integration with the core area. 
+
+## Trends over time chart
+For the first chart, I choose Black and White criminal population in CA to compare how those two values changing from 2009 to 2018. In this chart, we can see that the total white jail population is much higher than the total black population. This chart also emerges the flow of both Black and White jail population are really similar, so when the total_white goes down then total_black also goes down.  
+
+```{r pressure}
+plot(chart_1)
+```
+
+## Variable Comparison Chart
+
+For the second chart, I find the Male Juvenile criminal population rate to see the difference ratio in a different state. In the graph, we can see WY has a very dark blue color, which means it has a lower male juvenile population rate. Compared with WY, CA has the lightest color of blue, and it indicates CA has a high percentage of the male juvenile population in the United States. This chart emerges the United States' education system, which shows that states like CA and NJ need to put more effort into education policy and make sure less juvenile to be a criminal.   
+
+```{r, fig.width=12,fig.height=11}
+comparison_df %>% ggplot(aes(x = state, y = male_juv_rate)) + geom_bar(stat = "identity", aes(fill = male_juv_rate))
+```
+
+##Map 
+
+In the map, I create Asian American and Pacific Islander Jail population in NY to see how the AAPI population rate across New York. New York City has the highest Asian population in 2010, with more than 8 million people(Wikipedia). Then I want to create this map to see how the Asian American and Pacific Islander jail population is distributed in New York. New York City has the largest Asian community, so how does it relate to the AAPI jail population in NY? Will a specific county have a higher crime rate because of a large population of races living there? This map answers those questions, which emerges in the middle and north part of New York with a higher AAPI jail population than the south region. 
+
+```{r pressure3}
+plot(aapi_pop_ny)
+```
