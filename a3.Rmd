@@ -41,7 +41,8 @@ For the second chart, I find the Male Juvenile criminal population rate to see t
 comparison_df %>% ggplot(aes(x = state, y = male_juv_rate)) + geom_bar(stat = "identity", aes(fill = male_juv_rate))
 ```
 
-##Map 
+
+## Map 
 
 In the map, I create Asian American and Pacific Islander Jail population in NY to see how the AAPI population rate across New York. New York City has the highest Asian population in 2010, with more than 8 million people(Wikipedia). Then I want to create this map to see how the Asian American and Pacific Islander jail population is distributed in New York. New York City has the largest Asian community, so how does it relate to the AAPI jail population in NY? Will a specific county have a higher crime rate because of a large population of races living there? This map answers those questions, which emerges in the middle and north part of New York with a higher AAPI jail population than the south region. 
 
