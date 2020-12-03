@@ -78,11 +78,12 @@ trend_df <- data %>%
   filter(year > 2008)
 
 # create a line chart
-color <- c("total_black" = "darkred", "total_white" = "blue")
+color <- c("Total Black population in Jail" = "darkred", 
+           "Total White population in Jail" = "blue")
 
 chart_1 <- ggplot(trend_df, aes(x = year)) +
-  geom_line(aes(y = total_black, color = "total_black")) +
-  geom_line(aes(y = total_white, color = "total_white")) +
+  geom_line(aes(y = total_black, color = "Total Black population in Jail")) +
+  geom_line(aes(y = total_white, color = "Total White population in Jail")) +
   labs(
     title = "Black vs White Criminal population in CA",
     x = "Year",
@@ -116,11 +117,12 @@ comparison_df <- mutate(comparison_df,
 # create a bar plot
 chart_2 <- ggplot(comparison_df, aes(x = state, y = male_juv_rate)) +
   geom_bar(stat = "identity", aes(fill = male_juv_rate)) +
+  scale_fill_gradient(name = "Male Juvenile Rate") +
   labs(
     title = "How Male Juvenile criminal population related to each state",
     x = "State",
-    y = "Male_juv_rate in each state (%)"
-  )
+    y = "Male Juvenile Rate in each state (%)")
+
 
 # Map
 
@@ -168,5 +170,5 @@ aapi_pop_ny <- ggplot(map_data) +
   blank_theme +
   labs(
     title = "Asian American / Pacific Islander Jail Population in NY",
-    fill = "Level of Aapi Population"
+    fill = "Asian American / Pacific Islander Jail Population"
   )

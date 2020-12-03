@@ -13,7 +13,7 @@ library(ggplot2)
 ```
 
 
-## Introduction + Summary Information
+## Introduction
 The state with the lowest AAPI prison pop. is `r aapi_lowest` and the highest is 
 `r aapi_highest`
 
@@ -22,9 +22,10 @@ and the highest is `r highest_pop`
 
 The `r location_most_area` has the highest metro area
 
-### A paragraph of summary information 
-From the data, I got the two values from the Asian American / Pacific Islander population from ages 15 to 64: California is the state that has the highest population, and Wyoming is the state that has the lowest population. Then, I wrote similar coding to get another two values from the Native American Population from ages 15 to 64: Oklahoma is the state that has the highest population, and Washington, D.C. is the state that has the lowest population. Based on the location, I found that Oklahoma is one of the accounting for the largest concentration of the Native American. Compared with Oklahoma, Washington, D.C., has the lowest population of less than 2000 Native Americans in 2018(Wikipedia). Location can be an essential factor determining the number of state prisons since a particular race of people who live in this state from ancestral series. So that's why the country with the highest population of a specific race then get the highest prison population.
-Additionally, Wyoming only has less than 5000 people of the Asian American / Pacific Islander population(Wikipedia). Lastly, I also found a county's value with the most extensive account of the core-based statistical area, which is Columbia County in South California. It indicates that this county has at least one urban core with a population plus adjacent spaces with a high degree of social and economic integration with the core area. 
+### Summary information 
+This assignment focuses on the prison racism population in the United States by using
+the incarceration_trends.csv dataframe(2018). I want to analyze the population of 
+the different races in jail and its relation to particular individual regions. 
 
 ## Trends over time chart
 For the first chart, I choose Black and White criminal population in CA to compare how those two values changing from 2009 to 2018. In this chart, we can see that the total white jail population is much higher than the total black population. This chart also emerges the flow of both Black and White jail population are really similar, so when the total_white goes down then total_black also goes down.  
@@ -38,7 +39,7 @@ plot(chart_1)
 For the second chart, I find the Male Juvenile criminal population rate to see the difference ratio in a different state. In the graph, we can see WY has a very dark blue color, which means it has a lower male juvenile population rate. Compared with WY, CA has the lightest color of blue, and it indicates CA has a high percentage of the male juvenile population in the United States. This chart emerges the United States' education system, which shows that states like CA and NJ need to put more effort into education policy and make sure less juvenile to be a criminal.   
 
 ```{r, fig.width=12,fig.height=11}
-comparison_df %>% ggplot(aes(x = state, y = male_juv_rate)) + geom_bar(stat = "identity", aes(fill = male_juv_rate))
+plot(chart_2)
 ```
 
 
